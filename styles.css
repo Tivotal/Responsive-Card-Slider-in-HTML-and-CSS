@@ -1,0 +1,90 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3f2fd;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: #4070f4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow-x: scroll;
+  gap: 12px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 30px;
+}
+
+.container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 25px;
+}
+
+.container .card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 100%;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+}
+
+.container .card .image {
+  height: 150px;
+  width: 150px;
+  background: #4070f4;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.container .card .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+}
+
+.container .card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 25px;
+}
+
+.container .card p {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2px;
+}
